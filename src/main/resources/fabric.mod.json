@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "bdadvance",
+	"version": "${version}",
+	"name": "BloodDesignerAdvance",
+	"description": "Аддон AFriends для bloodstone.boo: пати, меню батл пасса и магазина, навигатор режимов.",
+	"authors": ["Fell", "Aloiner"],
+	"contact": {
+		"homepage": "https://no-names.com/projects/AFriends"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"afriends": ["dev.no.name.bdadvance.BdAdvanceAddon"]
+	},
+	"mixins": ["bdadvance.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "${minecraft_dependency}",
+		"java": ">=${java_version}",
+		"fabric-api": "*",
+		"afriends": ">=${afriends_version}"
+	}
+}
